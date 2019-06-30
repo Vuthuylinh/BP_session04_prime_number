@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>songuyento</title>
+</head>
+<body>
+<script>
+    let number=parseInt(prompt("How many first prime numbers you want to show? "));
+    let N=2;
+    let count =0;
+    function check(N) {
+        if(N<2){
+            return false;
+        }else if(N===2){
+            return true;
+        }else if(N>2){
+            for(i=2; i<N-1; i++){
+                if(N%i==0){
+                    return false; break;
+                }
+
+        }
+
+    }return true;
+    }
+    while(count<number){
+        if (check(N)==true){
+            document.write("prime nunber is: " + N + "<br>");
+            count++
+        }N++
+    }
+</script>
+</body>
+</html>
